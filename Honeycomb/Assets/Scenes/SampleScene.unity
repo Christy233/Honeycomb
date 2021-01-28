@@ -3280,7 +3280,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  isPass: 1
+  isPass: 0
 --- !u!212 &1837727607
 SpriteRenderer:
   m_ObjectHideFlags: 0
