@@ -10,64 +10,70 @@ public class hexagon : MonoBehaviour
     private float gValue = 999f;
     private float hValue = 999f;
 
-    public void reset()
+    public void Reset()
     {
 
     }
 
-    public hexagon[] getNeighborList()
+    public hexagon[] GetNeighborList()
     {
         return neighbors;
     }
 
-    public void setFatherHexagon(hexagon f)
+    public void SetFatherHexagon(hexagon f)
     {
         father = f;
     }
 
-    public hexagon getFatherHexagon()
+    public hexagon GetFatherHexagon()
     {
         return father;
     }
-
-    public void setCanPass(bool f)
+    //able to pass
+    public void SetCanPass(bool f)
     {
         isPass = f;
     }
 
-    public bool canPass()
+    public bool CanPass()
     {
         return isPass;
     }
 
-    public float computeGValue(hexagon hex)
+    public float ComputeGValue(hexagon hex)
     {
         return 1f;
     }
 
-    public void setgValue(float v)
+    public void SetgValue(float v)
     {
         gValue = v;
     }
 
-    public float getgValue()
+    public float GetgValue()
     {
         return gValue;
     }
 
-    public void sethValue(float v)
+    public void SethValue(float v)
     {
         hValue = v;
     }
 
-    public float gethValue()
+    public float GethValue()
     {
         return hValue;
     }
 
-    public float computeHValue(hexagon hex)
+    public float ComputeHValue(hexagon hex)
     {
         return Vector3.Distance(transform.position, hex.transform.position);
     }
 }
 
+//Hexagon manager
+//openlist[] 
+//closelist[]
+
+//void searchRoute()
+//int getRouteDistence(Hexagon thisHexagon, Hexagon targetHexagon)
