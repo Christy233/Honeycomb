@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hexagon : MonoBehaviour
+public class Hexagon : MonoBehaviour
 {
-    hexagon father = null;
-    public hexagon[] neighbors = new hexagon[6];
+    Hexagon father = null;
+    public Hexagon[] neighbors = new Hexagon[6];
     public bool isPass = true;
     private float gValue = 999f;
     private float hValue = 999f;
@@ -15,17 +15,17 @@ public class hexagon : MonoBehaviour
 
     }
 
-    public hexagon[] GetNeighborList()
+    public Hexagon[] GetNeighborList()
     {
         return neighbors;
     }
 
-    public void SetFatherHexagon(hexagon f)
+    public void SetFatherHexagon(Hexagon f)
     {
         father = f;
     }
 
-    public hexagon GetFatherHexagon()
+    public Hexagon GetFatherHexagon()
     {
         return father;
     }
@@ -40,7 +40,7 @@ public class hexagon : MonoBehaviour
         return isPass;
     }
 
-    public float ComputeGValue(hexagon hex)
+    public float ComputeGValue(Hexagon hex)
     {
         return 1f;
     }
@@ -65,7 +65,7 @@ public class hexagon : MonoBehaviour
         return hValue;
     }
 
-    public float ComputeHValue(hexagon hex)
+    public float ComputeHValue(Hexagon hex)
     {
         return Vector3.Distance(transform.position, hex.transform.position);
     }
