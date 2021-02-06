@@ -3353,8 +3353,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hexagonManager: {fileID: 1587196308}
-  startpos: {fileID: 1166500440}
-  endPos: {fileID: 1837727606}
+  startHex: {fileID: 1166500440}
+  targetHex: {fileID: 1416325478}
 --- !u!212 &1818444397
 SpriteRenderer:
   m_ObjectHideFlags: 0
